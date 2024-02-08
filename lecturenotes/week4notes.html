@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>Week 4 Notes</title>
+        <meta charset="utf-8">
+        <style>
+            th, td {border: 1px solid black} 
+        </style>
+    </head>
+
+    <body>
+        <h1>Tables and Forms</h1>
+            <h2>Tables</h2>
+                <table>
+                    <caption><strong>World Populations</strong></caption>
+                    <tr> <!-- tr stands for table row-->
+                        <th>Country</th> <!-- "th" is a table heading-->
+                        <th>Population</th>
+                        <th>% of Population</th>
+                    </tr>
+                    <tr>
+                        <td>China</td> <!-- "td" is one cell of the table going across-->
+                        <td>1,403,830,640</td>
+                        <td>18%</td>
+                    </tr>
+                    <tr>
+                        <td>India</td>
+                        <td>1,365,529,124</td>
+                        <td>17.5%</td>
+                    </tr>
+                    <tr>
+                        <td>United States</td>
+                        <td>330,070,331</td>
+                        <td>4.23%</td>
+                    </tr>
+                </table>
+
+            <h2>Forms</h2>
+                <form action="" method="post"> <!--"post" sends data on the back end, user does not see it.  "get" would post in the search bar for you to share with others-->
+                    <label for="fullname">Full Name:</label> <br> <!--Text for the user to see--> <!--"for=fullname(id below)" links input and label-->
+                    <input type="text" id="fullname" name="fullname"> <br>
+                    
+                    <label for="instructions">Special Instructions:</label> <br>
+                    <textarea id="instructions" name="instructions"></textarea>
+
+                <p>Choose a delivery method:</p> <!--Radio buttons are linked via "name", while ID still links label to input-->
+                    <input type="radio" id="pickup" name="pickupdelivery" value="pickup">
+                    <label for="pickup">Pick up</label> <br>
+
+                    <input type="radio" id="delivery" name="pickupdelivery"
+                    value="delivery">
+                    <label for="delivery">Delivery</label>
+
+                <p>Do you want extra sauce?</p>
+                    <input type="checkbox" id="extra" name="extra" value="yes">
+                    <label for="extra">Yes</label> <br>
+                    <br>
+
+                    <label>Neighborhood</label>
+                        <select id="neighborhood" name="neighborhood">
+                            <option value="blank"></option> <!--option value is a back end value delivered somewhere, like a warehouse, the plain text is what presented-->
+                            <option value="Westcott">Westcott</option>
+                            <option value="Downtown">Downtown</option>
+                            <option value="Eastwood">Eastwood</option>
+                        </select> <br>
+                        <!--most form elements are inline, no forwarding to the next line, no margin around-->
+                        <br>
+                        <input type="submit" value="Send Form">
+                </form>
+
+    </body>
+
+</html>
