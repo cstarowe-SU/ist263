@@ -1,0 +1,22 @@
+h1, p {color:red;
+    font-size: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*this is a group styler, effects anything that is listed as one */
+
+/* 
+p  {color:cadetblue;
+    font-size: 150%;
+    font-family:Arial, Helvetica, sans-serif;} 
+    
+this is a basic element selector that would only effect all of the <p>'s */
+
+p a {color: darkseagreen;}
+/*this is a descending selector, read as "links inside of paragraphs".  Only changes links found within paragraphs*/
+
+/*this styles the id*/
+#secondparagraph {color:chartreuse;}
+
+/*this styles the class*/
+.purpletext {color: purple;}

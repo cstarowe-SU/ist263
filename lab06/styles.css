@@ -1,0 +1,14 @@
+body {font-family: Arial, Helvetica, sans-serif}
+h1, h2 {color:coral}
+h1 {font-size: 5em}
+h2 {font-size: 2em}
+
+.evenrow {background-color: coral}
+
+
+
+/* 
+
+<link rel="stylesheet" href="styles.css">
+
+*/
