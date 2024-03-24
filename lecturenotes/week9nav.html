@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Four Ways</title>
+    <style>
+        nav {background-color: #000000;
+            padding: 10px;
+            color: #ffffff;
+            display: flex;} /*display flex is always a row*/
+
+        nav div {padding: 5px} /*effects the divs within the nav*/
+        
+        .flexend {justify-content: flex-end;} /*justify content goes on row, not the columns!!! slides everything to the "end" of the flexbox*/
+
+        .spacearound {justify-content: space-around;} /*Goes on row, spaces out all the divs within this flexbox*/
+
+        .spacebetween {justify-content: space-between;} /*goes on row, spaces out the divs based on the space between them, not the flexbox*/
+
+        .left, .right {display: flex;} /* this creates a flexbox inside of a flexbox, effecting the grandchildren*/
+        .split {justify-content: space-between;}
+        
+    </style>
+
+</head>
+
+<body>
+    <h1>Navigation Four Ways</h1>
+        <h2>Right Side</h2>
+            <nav class="flexend">
+                <div>Home</div>
+                <div>About Us</div>
+                <div>Products</div>
+                <div>Contact</div>
+            </nav>
+
+        <h2>Space Around</h2>
+            <nav class="spacearound">
+                <div>Home</div>
+                <div>About Us</div>
+                <div>Products</div>
+                <div>Contact</div>
+            </nav>
+
+        <h2>Space Between</h2>
+            <nav class="spacebetween">
+                <div>Home</div>
+                <div>About Us</div>
+                <div>Products</div>
+                <div>Contact</div>
+            </nav>
+
+        <h2>Split</h2>
+            <nav class="split"> <!-- the children of split are "left" and "right," everything is jumbled until you create another flexbox for left and right, effecting the "grandchildren" that are home, about, etc-->
+                <div class="left">
+                    <div>Home</div>
+                    <div>About Us</div>
+                    <div>Products</div>
+                    <div>Contact</div>
+                </div>
+
+                <div class="right">
+                    <div>Facebook</div>
+                    <div>X</div>
+                </div>
+            </nav>
+
+</body>
+</html>

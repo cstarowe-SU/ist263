@@ -1,11 +1,10 @@
 body {font-family: Arial, Helvetica, sans-serif;
     background-color: #ffb3b3;}
 
-nav {background-color: #2f6397;
+nav {background-color: #a4c0dc;
     padding: 10px;
-    margin-bottom: 30px;
-    border-radius: 3em;}
-nav a {color: #fffdf9}
+    margin-bottom: 30px;}
+nav a {color: #DCA4CE}
 nav a:hover {background-color: #DBDCA4}
 
 h1, h2 {color:#BD76E9}
