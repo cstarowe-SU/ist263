@@ -3,13 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Avaliability Report</title>
+    <style>
+        body {background-color:#fffff6;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; 
+            
+            color:#708090}
+        nav {text-align: right;
+            background-color: #708090;
+            color: #fffff6;
+            padding: 0 40px 0 0;}
+        main, header, section, footer {padding: 40px;}
+
+        
+        h1 {font-size: 3em; 
+        padding: 0px 40px;}
+        
+        h2 {padding: 0px 40px}
+        p {padding: 0px 40px}
+        table {border: 1px solid #000000;}
+            td, th {border: 1px solid #000000;
+            padding: 8px}
+            .navflex {display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;}
+
+        .slideshow {display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+            justify-content: space-evenly;}
+        .ss1 img, .ss2 img, .ss3 img, .ss4 img      
+            {width: 200px; height: auto;}
+    </style>
 </head>
 <body>
-    <nav>
-        <a href="1index.html">Home</a> |
-        <a href="2nowwhat.html">What Should I Do?</a> |
-        <a href="3shelters.html">Shelter Avaliability Report</a>
+    <nav class="navflex">
+        <div class="name">
+            <h1>Syracuse Stray Compass</h1>
+        </div>
+        <div class="links"> 
+            <a href="1index.html">Home</a> |
+            <a href="2nowwhat.html">What Should I Do?</a> |
+            <a href="3shelters.html">Shelter Avaliability Report</a>
+        </div>
     </nav>
 
     <header>
@@ -20,33 +58,267 @@
 
     <main>
         <div class="shelter1">
-            <div> i frames map, name, address</div>
-            <div> Table</div>
+            <div> 
+                <ul>
+                    <li><h3>Helping Hounds Dog Rescue</h3></li>
+                        <ul>
+                            <li>Availability: YES!</li>
+                            <li>(315) 446-5970</li>
+                            <li>7268 Casewell Ave., North Syracuse, NY., 13210</li>
+                        </ul>
+                </ul>
+            </div>
+            <div> 
+                <table>
+                    <tr>
+                    <td>Sunday</td>
+                    <td>12-3 PM</td>
+                    </tr>
+                    <tr>
+                    <td>Monday</td>
+                    <td>Closed</td>
+                    </tr>
+                    <tr>
+                    <td>Tuesday</td>
+                    <td>12-6 PM</td>
+                    </tr>
+                    <tr>
+                    <td>Wednesday</td>
+                    <td>12-6 PM</td>
+                    </tr>
+                    <tr>
+                    <td>Thursday</td>
+                    <td>12-6 PM</td>
+                    </tr>
+                    <tr>
+                    <td>Friday</td>
+                    <td>12-6 PM</td>
+                    </tr>
+                    <tr>
+                    <td>Saturday</td>
+                    <td>12-5 PM</td>
+                    </tr>
+                </table>
+              </div>
         </div>
-        <div class="shelter2">
-            <div> i frames map, name, address</div>
-            <div> Table</div>
+        <div class="map1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11648.551541559764!2d-76.10273786805602!3d43.12262954003578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d98cdd40ea7021%3A0x442063cc7321ece4!2sHelping%20Hounds%20Dog%20Rescue!5e0!3m2!1sen!2sus!4v1712533328781!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="shelter3">
-            <div> i frames map, name, address</div>
-            <div> Table</div>
+<hr>
+    <div class="shelter2">
+        <div> 
+            <ul>
+                <li><h3>Central New York SPCA</h3></li>
+                    <ul>
+                        <li>Availability: YES!</li>
+                        <li>(315) 545-4479</li>
+                        <li>75878 East Malloy Rd.,Syracuse, NY., 13211</li>
+                    </ul>
+            </ul>
         </div>
-        <div class="shelter4">
-            <div> i frames map, name, address</div>
-            <div> Table</div>
+        <div> 
+            <table>
+                <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+                </tr>
+                <tr>
+                <td>Monday</td>
+                <td>10-4 PM</td>
+                </tr>
+                <tr>
+                <td>Tuesday</td>
+                <td>10-4 PM</td>
+                </tr>
+                <tr>
+                <td>Wednesday</td>
+                <td>10-4 PM</td>
+                </tr>
+                <tr>
+                <td>Thursday</td>
+                <td>10-4 PM</td>
+                </tr>
+                <tr>
+                <td>Friday</td>
+                <td>10-4 PM</td>
+                </tr>
+                <tr>
+                <td>Saturday</td>
+                <td>10-4 PM</td>
+                </tr>
+            </table>
         </div>
-        <div class="shelter5">
-            <div> i frames map, name, address</div>
-            <div> Table</div>
+    </div>
+    <div class="map2">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11653.258512874932!2d-76.12230706807355!3d43.09790244006202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9ed611b5f6085%3A0xa333db1c623742f4!2sCNY%20SPCA%20OFFICE!5e0!3m2!1sen!2sus!4v1712533504971!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+<hr>
+    <div class="shelter3">
+        <div> 
+            <ul>
+                <li><h3>HumaneCNY</h3></li>
+                    <ul>
+                        <li>Availability: YES!</li>
+                        <li>(315) 457-8762</li>
+                        <li>4915 West Taft Rd., Liverpool, NY., 13088</li>
+                    </ul>
+            </ul>
         </div>
+        <div> 
+            <table>
+                <tr>
+                <td>Sunday</td>
+                <td>12-4 PM</td>
+                </tr>
+                <tr>
+                <td>Monday</td>
+                <td>Closed</td>
+                </tr>
+                <tr>
+                <td>Tuesday</td>
+                <td>12-4 PM</td>
+                </tr>
+                <tr>
+                <td>Wednesday</td>
+                <td>12-4 PM</td>
+                </tr>
+                <tr>
+                <td>Thursday</td>
+                <td>12-4 PM</td>
+                </tr>
+                <tr>
+                <td>Friday</td>
+                <td>12-4 PM</td>
+                </tr>
+                <tr>
+                <td>Saturday</td>
+                <td>12-4 PM</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="map3">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5824.330181291159!2d-76.1741184!3d43.12205800000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9edde3fcf9de5%3A0xf3c7d5b0b1301e66!2sHumaneCNY!5e0!3m2!1sen!2sus!4v1712533548770!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+<hr>
+    <div class="shelter4">
+        <div> 
+            <ul>
+                <li><h3>Second Chance Canine Adoption</h3></li>
+                    <ul>
+                        <li>Availability: FULL</li>
+                        <li>(315) 435-5584</li>
+                        <li>6660 E Seneca Turnpike, Jamesville, NY., 13078</li>
+                    </ul>
+            </ul>
+        </div>
+        <div> 
+            <table>
+                <tr>
+                <td>Sunday</td>
+                <td>10-2 PM</td>
+                </tr>
+                <tr>
+                <td>Monday</td>
+                <td>By appointment</td>
+                </tr>
+                <tr>
+                <td>Tuesday</td>
+                <td>By appointment</td>
+                </tr>
+                <tr>
+                <td>Wednesday</td>
+                <td>By appointment</td>
+                </tr>
+                <tr>
+                <td>Thursday</td>
+                <td>By appointment</td>
+                </tr>
+                <tr>
+                <td>Friday</td>
+                <td>By appointment</td>
+                </tr>
+                <tr>
+                <td>Saturday</td>
+                <td>10-2 PM</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="map4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11673.851647559373!2d-76.07348726815009!3d42.98958624018091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d98b3da72c9263%3A0x76c5365e56983f1b!2sSecond%20Chance%20Canine%20Adoption%20Shelter!5e0!3m2!1sen!2sus!4v1712533584639!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+<hr>
+    <div class="shelter5">
+        <div> 
+            <ul>
+                <li><h3>BnR Bunkhouse Shelter</h3>  //  The Default Shelter of Syracuse PD and City of Syracuse Dog Control  //</li> <br>
+                    <ul>
+                        <li>Availability: FULL</li>
+                        <li>(315) 546-4242</li>
+                        <li>6225 East Taft Rd, Syracuse, NY., 13212</li>
+                    </ul>
+            </ul>
+        </div>
+        <div> 
+            <table>
+                <tr>
+                <td>Sunday</td>
+                <td>By appointment</td>
+                </tr>
+                <tr>
+                <td>Monday</td>
+                <td>By appointment</td>
+                </tr>
+                <tr>
+                <td>Tuesday</td>
+                <td>By appointment</td>
+                </tr>
+                <tr>
+                <td>Wednesday</td>
+                <td>By appointment</td>
+                </tr>
+                <tr>
+                <td>Thursday</td>
+                <td>By appointment</td>
+                </tr>
+                <tr>
+                <td>Friday</td>
+                <td>By appointment</td>
+                </tr>
+                <tr>
+                <td>Saturday</td>
+                <td>By appointment</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="map5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11647.911032692153!2d-76.10076716805365!3d43.12599344003224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9edfbf4d4473d%3A0xea1e53672d1f7fb8!2sBnR%20Bunkhouse%20Shelter!5e0!3m2!1sen!2sus!4v1712533606906!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
     </main>
 
-    <section>
-        See our success stories
-        img img img img img
-    </section>
 
+    <section>
+        <h2> See Our Success Stories</h2>
+<hr>
+            <div class="slideshow">
+                <div class="ss1">
+                    <img src="../projectimages/dogpic5.jpg" alt="black happy dog">
+                </div>
+                <div class="ss2">
+                    <img src="../projectimages/dogpic4.jpg" alt="Happy salt and pepper husky">
+                </div>
+                <div class="ss3">
+                    <img src="../projectimages/dogpic8.jpg" alt="happy pitty">
+                </div>
+                <div class="ss4">
+                    <img src="../projectimages/dogpic3.jpg" alt="super cute husky">
+                </div>
+            </div>
+    </section>
+<hr>
     <footer>
         <p> &copy;2024 </p>
     </footer>
