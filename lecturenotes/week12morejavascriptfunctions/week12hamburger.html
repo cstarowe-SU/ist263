@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamborger Menu</title>
+    <style>
+        a {
+            background-color: #5f9ea0;
+            padding: 15px;
+        }
+        #hamicon {width: 40px;
+            display: none;
+        }
+        #close {display: none;
+
+        }
+        @media only screen and (max-width: 800px) {
+            #hamicon, #close {display: block;}
+            a {display: block;} /*"hack" to make nav stack*/
+            #navlinks {display: none;}
+            .boxit {display: flex;
+            justify-content: space-between;}
+        }
+    </style>
+    <script>
+        function showNav () {
+            document.getElementById("navlinks").style.display = "block";
+        }
+        function hideNav () {
+            document.getElementById("navlinks").style.display = "none";
+        }
+    
+    </script>
+</head>
+<body>
+    <div class="boxit">
+        <img id="hamicon" onclick="showNav();" src="https://laferger.github.io/ist263/images/hamburger.png" alt="Icon for hamborger menu">
+        
+        
+    </div>
+
+    <nav id="navlinks">
+        <p id="close" onclick="hideNav();">X</p>
+        <a>About</a>
+        <a>Skills</a>
+        <a>Contact</a>
+    </nav>
+
+    <h1>Hamborger Menu</h1>
+    <h2>CSS</h2>
+        <ol>
+            <li>large = no hamborger</li>
+            <li>small = show hamborger</li>
+            <li>large = no X</li>
+            <li>small = show x</li>
+            <li>large = links side by side</li>
+            <li>small = links are stacked</li>
+            <li>small = links initially hidden</li>
+        </ol>
+
+    <h2>JavaScript</h2>
+        <ol>
+            <li>click on hamborger links show</li>
+            <li>click on the X, the links hide</li>
+        </ol>
+</body>
+</html>
