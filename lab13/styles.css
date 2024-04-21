@@ -1,19 +1,19 @@
 body {font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffb3b3;}
+    background-color: #ffe6e6;}
 
-nav {background-color: #a4c0dc;
+nav {background-color: #64b1ff;
     padding: 10px;
     margin-bottom: 30px;}
-nav a {color: #DCA4CE}
-nav a:hover {background-color: #DBDCA4}
+nav a {color: #ffe6e6}
+nav a:hover {background-color: #1d1d16}
 
-h1, h2 {color:#BD76E9}
+h1, h2 {color:#ab2df9}
 h1 {font-size: 5em}
 h2 {font-size: 2em}
 
-p {color: #906464}
+p {color: #6a3f3f}
 
-a {color: #A4DCD8}
+a {color: #64b1ff}
 
 
 
