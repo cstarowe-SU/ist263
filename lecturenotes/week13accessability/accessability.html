@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .skip {
+            background-color: #ffa500;
+            padding: 8px;
+            border: 2px solid #000000;
+            text-decoration: none;
+            position: absolute; /*positions relative to top and bottom of browser viewport.  You can use top, bottom, left, right*/
+            top: 10px; /*how far down from the top of the viewport*/
+            left: -999px;/*push the button off screen, viewable only to people using accessability options*/
+        }
+        .skip:focus { /*when the button is tabbed to, it comes back*/
+            left: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <nav> <!-- Don't forget bookmark link in skip to content-->
+        <a href="#skip" class="skip" tabindex="1">Skip to Content</a> <br>
+        <a href="https://www.amazon.com" tabindex="4">Amazon</a> <br>
+        <a href="https://www.google.com" tabindex="3">Google</a> <br>
+        <a href="https://www.ebay.com" tabindex="2">eBay</a> <br>
+    </nav>
+    <h1>All the A11y Techniques</h1>
+    <p id="skip">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam voluptatum fugit quidem voluptates alias, consectetur similique, cumque saepe possimus enim odio reiciendis. Beatae illo mollitia dolorum repudiandae natus distinctio esse.</p>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Connor Starowesky - Bio</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .image {float: right; margin-left: 20px;
+                max-width: 100%;
+                }
+            .copyright {float: left; margin-right: 10px}
+            .quote {float: right; margin-left: 10px;}
+            .clear {clear: both;}
+            .space {padding: 20px}
+
+            .skip {
+            background-color: #ffa500;
+            padding: 8px;
+            border: 2px solid #000000;
+            text-decoration: none;
+            position: absolute; /*positions relative to top and bottom of browser viewport.  You can use top, bottom, left, right*/
+            top: 10px; /*how far down from the top of the viewport*/
+            left: -999px;/*push the button off screen, viewable only to people using accessability options*/
+        }
+        .skip:focus { /*when the button is tabbed to, it comes back*/
+            left: 10px; 
+        }
+        </style>
+    </head>
+        
+    <body> 
+        <nav>
+            <a href="#skip" class="skip"
+            tabindex="1">Skip to Content</a> <br>
+            <a href="index.html">Home</a> 
+            <span class="pipe">|</span>
+            <a href="skills7.html">Skills</a> 
+            <span class="pipe">|</span>
+            <a href="contact7.html">Contact</a>
+        </nav>
+    <main>
+
+        <h1 id="skip">Connor Starowesky's Biography</h1>
+    <img src="../images/bio-pic.png" alt="Connor and his two dogs" class="image">
+        <h2>Personal Info</h2>
+    
+
+             <p> My name is Connor Starowesky and I am a communications and rhetoric studies major at Syracuse University.  I am interested in analyzing how humans communicate with each other with implicit communication techniques through modern media.</p> 
+     
+
+        <h2>Skills and Interests</h2>
+             <p> Outside of the world of communications, I am proficient several other artistic skills, such as; <br> 
+                <ul>
+                    <li> Adobe Photoshop</li>
+                    <li> Adobe Illustrator</li>
+                    <li> Adobe InDesign</li>
+                    <li> Adobe Premier Pro</li>
+                    <li> Figma</li> 
+                 </ul>
+                <p> I also enjoy photography, video games, and working on cars with my friends. I have a rescue dog named <strong> Gambino</strong>, who is an all-American mutt and my best friend in the entire world. </p>
+        
+       
+
+        <h2>Career</h2>
+            <p>I've been in the Army since 2020.  I am currently a transportation officer in the New York Army National Guard.  Upon graduation from Syracuse University, I will transition to the active duty Army where I will become a field artillery officer.</p>
+        <div class="clear"></div>
+    </main>
+
+    
+
+        
+    <footer>
+            <hr>
+            <p class="copyright">&copy; 2024</p>
+
+            <p class="quote">"A pint of sweat will save a gallon of blood." -GEN Patton </p>
+
+            
+    </footer>
+    </body>
+
+</html>
