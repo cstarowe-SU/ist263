@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="projstyles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../projectimages/favicon.ico">
+    <style>
+         .navflex {display: flex;
+            flex: 1;
+            align-items:baseline;
+            justify-content: space-between;}
+            .navflex h2 {margin: 0;
+                        font-size: 3em;
+                        color:#fffff6;
+                        flex: 1;}
+          
+            .navflex a {text-decoration: none;
+                    color: #000006;
+                    }
+           
+
+        .tagline {display: flex; 
+            flex: 1;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;} 
+
+            .box1 {padding:20px;}
+                .prompt {text-align: center;
+                color: #708090;
+                padding: 0 40px;
+                }
+
+            .img1 {padding-top: 20px;}
+        
+        .main {display: flex;
+            flex-wrap: wrap;
+            align-items: center;}
+            
+            .img2 {flex: 1;}
+            .words {flex: 3}
+        
+        .img1, .img2 {max-width: 100%;
+            height: auto;}
+
+        .slideshow {display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+            justify-content: space-evenly;
+            }
+            .ss1 img, .ss2 img, .ss3 img, .ss4 img {width: 200px; height: auto;}
+            #para1 {display: none;
+                width: 200px; height: auto;}
+            #para2 {display: none;
+                width: 200px; height: auto;}
+            #para3 {display: none;
+                width: 200px; height: auto;}
+            #para4 {display: none;
+                width: 200px; height: auto;}
+
+        /*accessability*/
+        .skip {
+            background-color: #ffa500;
+            padding: 8px;
+            border: 2px solid #000000;
+            text-decoration: none;
+            position: absolute; 
+            top: 10px;
+            left: -999px;
+            }
+            
+        .skip:focus {
+            left: 10px; 
+            }
+
+    /*///break///*/
+    #hamicon {width: 40px;
+            display: none;
+        }
+        #close {display: none;
+            color: #000004;
+            background-color: #fffff6; 
+            padding: 8px;
+            border: #000004 1px solid;
+            text-align: right;
+
+        }
+    @media only screen and (max-width: 800px) {
+        #hamicon, #close {display: block;}
+        a {display: block;} /*"hack" to make nav stack*/
+        #navlinks {display: none;
+                text-align: left;}
+        .mobilemenu {display: flex;
+                    justify-content: space-between;}
+        }
+    @media only screen and (min-width: 801px) {
+        #hamicon, #close {display: none;}
+    }
+        
+    </style>
+    <script>
+        function showNav () {
+            document.getElementById("navlinks").style.display = "block";
+        }
+        function hideNav () {
+            document.getElementById("navlinks").style.display = "none";
+        }
+        function hideHamborger () {
+            document.getElementById("hamicon").style.display = "none";
+        }
+        function showHamborger () {
+            document.getElementById("hamicon").style.display = "block";
+        }
+
+
+        /*SS START HERE*/
+        /* PUPPY ONE*/
+        function showPara1 () {
+            document.getElementById("para1").style.display = "block";
+        }
+        function hidePup1 () {
+            document.getElementById("pup1").style.display = "none";
+        }
+        function hidePara1 () {
+            document.getElementById("para1").style.display = "none";
+        }
+        function showPup1 () {
+            document.getElementById("pup1").style.display = "block";
+        }
+
+        /* PUPPY TWO*/
+        function showPara2 () {
+            document.getElementById("para2").style.display = "block";
+        }
+        function hidePup2 () {
+            document.getElementById("pup2").style.display = "none";
+        }
+        function hidePara2 () {
+            document.getElementById("para2").style.display = "none";
+        }
+        function showPup2 () {
+            document.getElementById("pup2").style.display = "block";
+        }
+
+        /* PUPPY THREE*/
+        function showPara3 () {
+            document.getElementById("para3").style.display = "block";
+        }
+        function hidePup3 () {
+            document.getElementById("pup3").style.display = "none";
+        }
+        function hidePara3 () {
+            document.getElementById("para3").style.display = "none";
+        }
+        function showPup3 () {
+            document.getElementById("pup3").style.display = "block";
+        }
+        
+        /* PUPPY FOUR*/
+        function showPara4 () {
+            document.getElementById("para4").style.display = "block";
+        }
+        function hidePup4 () {
+            document.getElementById("pup4").style.display = "none";
+        }
+        function hidePara4 () {
+            document.getElementById("para4").style.display = "none";
+        }
+        function showPup4 () {
+            document.getElementById("pup4").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <header class="navflex">
+        <h2>Syracuse Stray Compass</h2>
+        <nav id="navlinks">
+            <a href="#skip" class="skip" tabindex="1">Skip to Content</a> <br>
+            <p id="close" onclick="hideNav(); showHamborger();">X</p>
+
+            <a href="index.html" tabindex="2">Home</a> 
+    
+            <a href="nowwhat.html" tabindex="3">What Should I Do?</a> 
+            
+            <a href="shelters.html" tabindex="4">Shelter Avaliability Report</a>
+        </nav>
+        <div class="mobilemenu">
+            <img id="hamicon" onclick="showNav(); hideHamborger();" src="https://laferger.github.io/ist263/images/hamburger.png" alt="Icon for hamborger menu">
+        </div>
+    </header>
+
+    
+    
+    <summary id="skip">
+        <div class="tagline">
+    
+            <div class="box1"> 
+                <h1 class="prompt"> Every dog deserves to feel loved.</h1>
+            </div>
+    
+            <div class="box2">
+                <img src="../projectimages/dogpic1.jpg" alt="Sad image of a stray dog looking longingly at the viewer." class="img1">
+            </div>
+        </div>  
+    </summary>
+    
+    <main class="main">
+        <div class="img2">
+            <img src="../projectimages/dogpic2.jpg" alt="An image of an even sadder dog looking longingly at the viewer." class="img2">
+        </div>
+        <div class="words">
+            <h2>If you found a stay dog, Syracuse Stray Compass is here for you!</h2>
+            <p>The Syracuse Stray Compass helps the citizens of Syracuse and the surrounding areas responsibly manage stray dogs that are found on the streets.  All too many times a stray dog ends up in a cycle of being rehomed and returning to the streets because of irresponsible rehoming groups on social media.  While intentions are to save the strays from ending up in a kill shelter, they often give away these found strays to the first person who offers to take them, without ensuring that they have a safe home or the right intentions for these dogs.  The results may vary, but all too often these dogs end up in dog fighting rings or back on the streets.</p> <br>
+    
+            <p>These repercussions can be avoided by educating the public and by streamlining the process of rescuing a stray dog.  There are a number of projects and resources in the greater Syracuse area, but unfortunately, their websites are outdated and lead to dead ends.  By streamlining the process of reporting and rehoming a stray, more dogs will be able to find a safe and loving forever home.</p>
+        </div>
+            
+    </main>
+    
+        
+    
+    <section>
+        <h2> See Our Success Stories</h2>
+<hr>
+
+<div class="slideshow">
+    <div class="ss1">
+        <img src="../projectimages/dogpic5.jpg" alt="black happy dog" id="pup1" onclick="showPara1(); hidePup1();" >
+        <p id="para1" onclick="hidePara1(); showPup1();">
+            <strong>Bella - Labrador Retriever Mix </strong><br>
+            “I found Bella behind my house before a big snowstorm! I was able to use Syracuse Stray Compass to locate an open shelter with availability and get Bella a warm and safe place to stay before the snow came!” -Serena J.
+        </p>
+    </div>
+    
+    <div class="ss2">
+        <img src="../projectimages/dogpic4.jpg" alt="Happy salt and pepper husky" id="pup2" onclick="showPara2(); hidePup2();" >
+        <p id="para2" onclick="hidePara2(); showPup2();">
+            <strong>Rocky - GSD/Husky Mix </strong><br>
+            “I adopted Rocky from Helping Hounds Rescue and he has been a phenomenal companion to me! He was brought into Helping Hounds through Syracuse Stray Compass and they were able to find him a warm bed to stay in until he could be adopted." -Ethan P.
+        </p>
+    </div>
+    <div class="ss3">
+        <img src="../projectimages/dogpic8.jpg" alt="solem boxer" id="pup3" onclick="showPara3(); hidePup3();" >
+        <p id="para3" onclick="hidePara3(); showPup3();">
+            <strong>Tyson - Boxer </strong><br>
+            “I found Tyson starving on the street, he kept almost getting hit by cars! I brought
+            him in and used Syracuse Stray Compass to learn the most responsible way to bring him into a shelter. I brought him to CNY SPCA and they scanned him for a microchip but didn’t find anything on him. I went back the next weekend and he was still there so I knew I had to bring him home with me through a formal adoption!” -Lucas R. 
+        </p>
+    </div>
+    <div class="ss4">
+        <img src="../projectimages/dogpic3.jpg" alt="super cute husky" id="pup4" onclick="showPara4(); hidePup4();" >
+        <p id="para4" onclick="hidePara4(); showPup4();">
+            <strong>Lady - Husky</strong><br>
+            “Lady was found on the street hungry and thirsty during the middle of the summer. She was seen repeatedly by neighbors and kept being rehomed but then returned to the streets. I used Syraucse Stray Compass to learn the proper way to rescue her to make sure she was responsibly handled and she recently found her forever home!” -Maya T. 
+        </p>
+    </div>
+</div>
+</section>
+<hr>
+    <footer>
+        <p> Syracuse Stray Compass &copy;2024 </p>
+    </footer>
+
+</body>
+</html>

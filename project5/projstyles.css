@@ -1,0 +1,32 @@
+header {background-color: #708090;}
+
+body {background-color:#fffff6;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; 
+    color:#708090}
+
+nav {text-align: right;
+    background-color: #708090;
+    color: #fffff6;
+    padding-bottom: 5%;
+    }
+    
+    nav h2 {font-size: 2em;}
+    nav a {color: #000004;
+        background-color: #fffff6; 
+        padding: 8px;
+        border:#000004 1px solid;
+        }
+
+    nav a:hover {background-color: #708090;
+            color: #fffff6;}
+
+ main, header, section, footer {padding: 40px;}
+
+h1 {font-size: 3em; 
+    padding: 0px 40px;}
+
+h2 {padding: 0px 40px;}
+p {padding: 0px 40px}
+
+    
+
